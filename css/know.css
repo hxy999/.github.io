@@ -1,0 +1,146 @@
+body {
+    margin: 0;  /*取消外边距*/
+    padding: 0; /*取消内边距*/
+    background-image: url("../img_mp4/background_home.jpg");  /*背景图片*/
+    background-size: cover;  /*图片填充整个屏幕*/
+    font-family: "Courier New", monospace;
+  }
+  h1{
+    font-family: "Times New Roman", serif;
+  }
+  header {
+    background-color: rgba(255, 255, 255, 0.7);  /*将导航栏背景颜色设置为半透明白色*/
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius:20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;  /*让每个超链接之间的空间均匀分布*/
+    align-items: center;   /*让它们在垂直方向上居中对齐*/
+  }
+  
+  .nav-item {
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;    /*圆角边框*/
+    backdrop-filter: blur(10px);  /*毛玻璃效果*/
+  }
+  
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /*主体*/
+  main{
+    width: 1200px;
+    height: 700px;
+    margin: 20px auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;/*一个水平方向的Flex容器*/
+  }
+
+  .information{
+    width: 260px;
+    height: 700px;
+    /* background-color: bisque; */
+    margin-top: 100px;
+    flex: 0 0 25%;/*宽度固定为父容器的30%*/
+    .jichuxinxi{
+        width: auto;
+        height: 340px;
+        /* background-color: brown; */
+        text-align: center;
+        margin-top: 100px;
+        color: #7fbfec;
+    }
+    .jichuxinxi2{
+        width: auto;
+        height: 200px;
+        margin-left: 30px;
+        margin-top: 30px;
+        /* background-color: blueviolet; */
+        color: #ffffff;
+    }
+  }
+  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  .colored-line1 {
+    position: relative;
+  }
+  
+  .colored-line1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* 调整横线的位置 */
+    width: 50%; /* 调整横线的长度 */
+    height: 4px; /* 调整横线的高度 */
+    background-color: rgb(81, 211, 179); /* 调整横线的颜色 */
+  }
+  .colored-line2 {
+    position: relative;
+  }
+  .colored-line2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* 调整横线的位置 */
+    width: 30%; /* 调整横线的长度 */
+    height: 4px; /* 调整横线的高度 */
+    background-color: rgb(81, 211, 179); /* 调整横线的颜色 */
+  }
+  .colored-line3 {
+    position: relative;
+  }
+  .colored-line3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* 调整横线的位置 */
+    width: 40%; /* 调整横线的长度 */
+    height: 4px; /* 调整横线的高度 */
+    background-color: rgb(81, 211, 179); /* 调整横线的颜色 */
+  }
+
+
+  /*内容*/
+  .content{
+    width: 400px;
+    height: 100%;
+    flex: 1;/*扩展并填充剩余的空间*/
+  }
+  .colored-line4 {
+    position: relative;
+  }
+  .colored-line4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* 调整横线的位置 */
+    width: 80%; /* 调整横线的长度 */
+    height: 4px; /* 调整横线的高度 */
+    background-color: rgb(212, 211, 211); /* 调整横线的颜色 */
+  }
+
+  .xinqu{
+    height: 40%;
+    margin-top: 70px;
+    margin-left: 50px;
+    color: white;
+  }
+  .kecheng{
+    height: 40%;
+    margin-left: 50px;
+    color: white;
+  }

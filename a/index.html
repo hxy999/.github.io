@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄祥云的个人网页</title>
+    <link rel="icon" href="../img_mp4/logo.png" type="image/png">  <!--网页图标-->
+    <link rel="stylesheet" href="../css/home.css" type="text/css"> <!--首页的css样式-->
+    <!--通过javascript实现与系统同步时钟-->
+    <script type="text/javascript">
+        function updateClock() {
+          var date = new Date();
+          var hours = date.getHours();
+          var minutes = date.getMinutes();
+          var seconds = date.getSeconds();
+    
+          var hourHand = document.querySelector('.hour-hand');
+          var minuteHand = document.querySelector('.minute-hand');
+          var secondHand = document.querySelector('.second-hand');
+          var timeDisplay = document.getElementById('time');
+    
+          var hourRotation = (hours % 12 + minutes / 60 + seconds / 3600) * 30;
+          var minuteRotation = (minutes + seconds / 60) * 6;
+          var secondRotation = seconds * 6;
+    
+          hourHand.style.transform = `translate(-50%, -100%) rotate(${hourRotation}deg)`;
+          minuteHand.style.transform = `translate(-50%, -100%) rotate(${minuteRotation}deg)`;
+          secondHand.style.transform = `translate(-50%, -100%) rotate(${secondRotation}deg)`;
+    
+          var formattedTime = formatTime(hours, minutes, seconds);
+          timeDisplay.textContent = formattedTime;
+        }
+    
+        function formatTime(hours, minutes, seconds) {
+          var amPm = hours < 12 ? 'AM' : 'PM';
+          hours = hours % 12 || 12;
+          minutes = padZero(minutes);
+          seconds = padZero(seconds);
+          return hours + ':' + minutes + ':' + seconds + ' ' + amPm;
+        }
+    
+        function padZero(value) {
+          return value < 10 ? '0' + value : value;
+        }
+    
+        setInterval(updateClock, 1000);
+      </script>
+</head>
+    
+</div>
+<body>
+    <!--导航-->
+    <header>
+        <nav>
+            <a href="index.html" class="nav-item">首页</a>
+            <a href="know.html" class="nav-item">简介</a>
+            <a href="movie.html" class="nav-item">影视</a>
+            <a href="study.html" class="nav-item">学习</a>
+            <a href="contact.html" class="nav-item">联系</a>
+            <a href="Log in.html" class="nav-item">登录</a>
+        </nav>
+    </header>
+    <!--主体-->
+    <main>
+        <div class="touxiang">
+            <div class="touxiang1">
+              <img src="../img_mp4/touxiang.jpg" alt="touxiang">
+              <span class="text">黄祥云</span>
+            </div>
+        </div>
+        <div class="music">
+          <div class="item"></div>
+          <div class="player-container">
+            <audio id="audio" controls autoplay>
+          <source src="../img_mp4/music.mp3" type="audio/mpeg">
+          您的浏览器不支持音频标签。
+          <a href="../img_mp4/music.mp3" download>点击此处下载音乐</a>
+          </audio>
+          </div>
+          <div class="container">
+            <img class="image" src="../img_mp4/huaibin.jpg" alt="图片">
+            <p class="description">候鸟天堂</p>
+          </div>
+          <div class="container">
+            <img class="image" src="../img_mp4/huaibin2.png" alt="图片">
+            <p class="description">阳春三月，淮河岸边，绿草茵茵。堤下池塘、农田、果园纵横交织，在温暖阳光的滋润下，大片的金黄色的油菜怒放着，形成了景观独特的生态系统。</p>
+          </div>
+        </div>
+        <!--时钟-->
+        <div id="clock">
+          <div class="hand hour-hand"></div>
+          <div class="hand minute-hand"></div>
+          <div class="hand second-hand"></div>
+          <div id="time"></div>
+        </div>
+        <!--文章-->
+        <div class="article">
+          <img class="image" src="../img_mp4/huaibin3.jpg" alt="图片">
+          <p class="description">淮之春</p>
+        </div>
+
+    </main>
+    <!--底部-->
+    <div class="footer">
+      <p>版权信息 © 2023，保留所有权利。</p>
+      <a href="mailto:hxy8275@126.com"><p>邮箱：hxy8275@126.com</a>  WeChat:hdd02111</p>
+    </div>
+</body>
+</html>

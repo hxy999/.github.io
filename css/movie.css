@@ -1,0 +1,119 @@
+body {
+    margin: 0;  /*取消外边距*/
+    padding: 0; /*取消内边距*/
+    background-image: url("../img_mp4/background_home.jpg");  /*背景图片*/
+    background-size: cover;  /*图片填充整个屏幕*/
+  }
+  
+  header {
+    background-color: rgba(255, 255, 255, 0.7);  /*将导航栏背景颜色设置为半透明白色*/
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius:20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;  /*让每个超链接之间的空间均匀分布*/
+    align-items: center;   /*让它们在垂直方向上居中对齐*/
+  }
+  
+  .nav-item {
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;    /*圆角边框*/
+    backdrop-filter: blur(10px);  /*毛玻璃效果*/
+  }
+  
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+
+  main{
+    width: 1400px;
+    height: 900px;
+    margin: 20px auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;/*一个水平方向的Flex容器*/
+  }
+
+
+/* 侧边栏 */
+  .sidebar {
+    width: 140px;
+    height: 500px;
+    padding: 20px;
+    margin: 30px 30px ;
+    /* background-color: rgb(151, 195, 233); */
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+
+  .sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #a1f3e7;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .sidebar a:hover {
+    background-color: #dddddd;
+  }
+/* 中间内容 */
+  article{
+    width: 1200px;
+    height: 900px;
+    /* background-color: #d78e8e; */
+  }
+  .first{
+    width: 1200px;
+    height: 450px;
+    /* background-color: blueviolet; */
+  }
+  .xingji{
+    width: 320px;
+    height: 420px;
+    margin-left: 40px;
+    /* background-color: blue; */
+    text-align: center;
+    color: #ffffff;
+    float: left;
+  }
+  img{
+    width: 280px;
+    height: 400px;
+  }
+  .second{
+    width: 1200px;
+    height: 450px;
+    /* background-color: #802a2a; */
+  }
+
+  body {
+    font-family: "Courier New", monospace;
+  }
+  
+  h1 {
+    font-family: "Times New Roman", serif;
+  }
+  
+  p {
+    font-family: "Courier New", monospace;
+  }
+  

@@ -1,0 +1,204 @@
+body {
+  margin: 0;  /*取消外边距*/
+  padding: 0; /*取消内边距*/
+  background-image: url("../img_mp4/background_home.jpg");  /*背景图片*/
+  background-size: cover;  /*图片填充整个屏幕*/
+}
+header {
+  background-color: rgba(255, 255, 255, 0.7);  /*将导航栏背景颜色设置为半透明白色*/
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius:20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;  /*让每个超链接之间的空间均匀分布*/
+  align-items: center;   /*让它们在垂直方向上居中对齐*/
+}
+
+.nav-item {
+  color: #333;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;    /*圆角边框*/
+  backdrop-filter: blur(10px);  /*毛玻璃效果*/
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*主体*/
+main{
+  width: 1200px;
+  height: 1000px;
+  margin: 16px auto;
+
+} 
+.touxiang{
+  display: flex;
+  justify-content: center;
+  /* background-color: #6ca092; */
+  margin-top: 25px;
+}
+.touxiang1{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; 
+  overflow: hidden;
+  text-align: center;
+}
+.touxiang img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /*按照图片比例填满整个容器*/
+}
+.touxiang1.text{
+  display: block;
+  margin-top: 5px; /* 根据需要调整文字和图片之间的间距 */
+
+}
+.music{
+  float: left;
+  width: 700px;
+  height: 833px;
+  margin-left:100px;
+  /* margin: 16px 16px; */
+}
+.music {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* 容器 */
+.container {
+  width: 300px;
+  text-align: center;
+  /* background-color: #74e2e0; */
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #6ca092;
+}
+
+
+.player-container {
+  display: flex;
+  align-items: center;
+  /* background-color: antiquewhite; */
+}
+.play-btn {
+  margin-right: 10px;
+  float: right;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+#clock {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  border: 6px solid #6fced9;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: hotpink; */
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  background-color: #74e2e0;
+  transition: all 0.5s;
+}
+
+.hour-hand {
+  width: 8px;
+  height: 70px;
+  margin-left: -4px;
+}
+
+.minute-hand {
+  width: 6px;
+  height: 90px;
+  margin-left: -3px;
+}
+
+.second-hand {
+  width: 2px;
+  height: 100px;
+  margin-left: -1px;
+  background-color: red;
+}
+
+#time {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #8eeded;
+}
+
+.article{
+  width: 325px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+  margin-top: 210px;
+}
+section{
+  margin-bottom:10px;
+}
+
+/*底部*/
+/* body {
+  padding-bottom: 100px;
+  margin-top: 100px;
+} */
+
+.footer {
+  position: relative;
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  color: #aa1137a2;
+  text-align: center;
+  margin-top: -100px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", monospace;
+}
+
+h1 {
+  font-family: "Times New Roman", serif;
+}
+
+p {
+  font-family:Arial, sans-serif;
+}

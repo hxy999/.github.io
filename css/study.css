@@ -1,0 +1,100 @@
+body {
+    margin: 0;  /*取消外边距*/
+    padding: 0; /*取消内边距*/
+    background-image: url("../img_mp4/background_home.jpg");  /*背景图片*/
+    background-size: cover;  /*图片填充整个屏幕*/
+  }
+  
+  header {
+    background-color: rgba(255, 255, 255, 0.7);  /*将导航栏背景颜色设置为半透明白色*/
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius:20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;  /*让每个超链接之间的空间均匀分布*/
+    align-items: center;   /*让它们在垂直方向上居中对齐*/
+  }
+  
+  .nav-item {
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;    /*圆角边框*/
+    backdrop-filter: blur(10px);  /*毛玻璃效果*/
+  }
+  
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+/* 搜索引擎 */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;   /*space-between*/
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    width: 500px;
+    height: 45px;
+    padding: 10px;
+    margin: 40px auto;
+  }
+
+  .search-bar input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    padding: 5px;
+    font-size: 16px;
+    width: 400px;
+  }
+
+  .search-bar button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .search-bar img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  article{
+    width: 900px;
+    height: 160px;
+    margin: 0 auto;
+    /* background: blanchedalmond; */
+  }
+  .Region{
+    width: 900px;
+    height: 100px;
+    /* background: hotpink; */
+    color: white;
+    float: left;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .link img{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;  /*间距*/
+    border-radius: 14px;
+  }
+  .link p {
+    margin-left: 30px;
+  }
+  body {
+    font-family: "Courier New", monospace;
+  }
